@@ -1,0 +1,14 @@
+id: qed_citymigration
+label: 'Custom QED City Migration'
+migration_group: qed_migration
+ # Configure source database connection details.
+source:
+  plugin: qed_citymigration_source
+destination:
+  plugin: entity:qed_city
+process:
+  id: _id
+  title: city
+  loc: loc
+  pop: pop
+  state: state

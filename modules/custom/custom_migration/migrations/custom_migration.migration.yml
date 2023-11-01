@@ -1,0 +1,12 @@
+id: custom_migration
+label: 'Custom Migration Example'
+migration_group: custom_migrationg
+source:
+  plugin: custom_migration_source
+  # Configure source database connection details.
+destination:
+  plugin: entity:node
+  default_bundle: article
+process:
+  title: title
+  body: description
